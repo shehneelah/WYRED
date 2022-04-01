@@ -1,0 +1,191 @@
+/* presentation and styling*/
+
+/* represents html tag in index.hmtl, define global variables green white black */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  /* background-color: #faf9f6; */
+}
+
+.banner {
+  background: #f06543;
+}
+
+.banner__content {
+  padding: 10px;
+  max-width: 1000x;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.5;
+  }
+}
+
+.banner__text {
+  flex-grow: 1;
+  line-height: 1.4;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  animation: blink 3s linear infinite;
+}
+
+.banner__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.navbar {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  float: right;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  text-align: right;
+  background-position: 100%;
+}
+
+/* .logo {
+  float: left;
+  margin: auto 5px;
+  width: 150px;
+  cursor: pointer;
+} */
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #f09d51;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%; /* after hovering the widht of bar increases from 0 to 100% */
+}
+
+.content {
+  width: 100%;
+  top: 60%;
+  transform: translateY(-35%);
+  text-align: center;
+  color: black;
+}
+
+/* .ringtext {
+  text-align: center;
+  float: right;
+  padding: 1em;
+  cursor: pointer;
+}
+.ring-image {
+  border-radius: 50%;
+  width: 100px;
+  height: auto;
+}
+
+.necklacetext {
+  text-align: center;
+  float: right;
+  padding: 1em;
+  cursor: pointer;
+}
+.necklace-image {
+  border-radius: 50%;
+  width: 100px;
+  height: 90px;
+}
+
+.earringstext {
+  text-align: center;
+  float: right;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.earrings-image {
+  border-radius: 50%;
+  width: 100px;
+  height: 90px;
+} */
+
+#homepageimage {
+  float: left;
+  width: 50%;
+  height: 500px;
+  top: 50px;
+}
+
+#secondhomepageimage {
+  float: right;
+  width: 50%;
+  height: 500px;
+  top: 50px;
+}
+
+.container {
+  position: relative;
+  color: white;
+}
+
+.text {
+  position: absolute;
+  font-family: "Public Sans", sans-serif;
+  top: 250px;
+  left: 30px;
+  font-size: 50px;
+}
+
+.text2 {
+  position: absolute;
+  top: 325px;
+  left: 50px;
+  font-family: "Courgette", serif;
+  font-size: 25px;
+}
+
+.subheading {
+}
+
+#necklace {
+  width: 200px;
+  height: 200px;
+}
+
+#earring {
+  width: 200px;
+  height: 200px;
+}
+
+#ring {
+  width: auto;
+  height: 200px;
+}
